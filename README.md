@@ -1,32 +1,31 @@
-Quantum Harmonic Oscillator Simulation
+# Quantum Harmonic Oscillator Simulation
+
 This Python code simulates the time evolution of a quantum harmonic oscillator using the Suzuki-Trotter decomposition method. It's designed for educational and research purposes in quantum mechanics and quantum computing.
 
-Features
-Creation of annihilation and creation operators for quantum harmonic oscillators.
-Hamiltonian construction for a quantum harmonic oscillator system.
-Implementation of the Suzuki-Trotter approximation for time evolution.
-Functions for evolving quantum states over time and calculating their properties.
-Plotting the time evolution of overlap with the initial state and mean occupation number.
-Requirements
-Python 3.x
-NumPy
-SciPy
-Matplotlib
-Installation
+# Requirements
+
+- Python 3.x
+- NumPy
+- SciPy
+- Matplotlib
+
+# Installation
+
 No special installation is required beyond the Python environment. Ensure you have the required libraries (NumPy, SciPy, and Matplotlib) installed in your Python environment.
 
-Usage
+# Usage
+
 Define the number of spins (Nspins) and the frequency (omega) for the harmonic oscillator system.
 Set the time step (dt) and the number of steps (steps) for the simulation.
 The main functions are:
-create_adag(Nspins): Creation operator.
-create_aa(Nspins): Annihilation operator.
-create_hamiltonian(Nspins, omega): Hamiltonian of the system.
-suzuki_trotter_evolution_operator(H, dt): Time evolution operator using Suzuki-Trotter decomposition.
-time_evolve_state(state, U): Evolves a given quantum state.
-calculate_overlap(state1, state2): Calculates the overlap between two states.
-calculate_mean_occupation_number(state, Nspins): Calculates the mean occupation number.
-track_evolution(initial_state, H, Nspins, steps, delta_t): Tracks the evolution of the initial state over time.
+`create_adag(Nspins)`: Creation operator.
+`create_aa(Nspins)`: Annihilation operator.
+`create_hamiltonian(Nspins, omega)`: Hamiltonian of the system.
+`suzuki_trotter_evolution_operator(H, dt)`: Time evolution operator using Suzuki-Trotter decomposition.
+`time_evolve_state(state, U)`: Evolves a given quantum state.
+`calculate_overlap(state1, state2)`: Calculates the overlap between two states.
+`calculate_mean_occupation_number(state, Nspins)`: Calculates the mean occupation number.
+`track_evolution(initial_state, H, Nspins, steps, delta_t)`: Tracks the evolution of the initial state over time.
 The script ends with plotting the time evolution of the overlap with the initial state and the mean occupation number.
 Example
 The provided example initializes a quantum harmonic oscillator with 10 spins and tracks its time evolution using a Suzuki-Trotter decomposition with a first-order approximation.
